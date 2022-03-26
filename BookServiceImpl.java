@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.example.demo.entity.Book;
 import com.example.demo.repository.BookRepository;
-
+@Service
 public class BookServiceImpl implements BookService{
 	
 	@Autowired
