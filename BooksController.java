@@ -24,7 +24,7 @@ public class BooksController {
 
 	// add mapping for "/list"
 
-	@GetMapping("/list")
+	@RequestMapping("/list")
 	public String listBooks(Model theModel) {
 
 		// get Books from db
@@ -60,7 +60,7 @@ public class BooksController {
 		return "Book-form";
 	}
 
-	@PostMapping("/save")
+	@RequestMapping("/save")
 	public String saveBook(@RequestParam("id") int id, @RequestParam("name") String name,
 			@RequestParam("category") String category, @RequestParam("author") String author) {
 
